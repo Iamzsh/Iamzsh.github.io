@@ -4,120 +4,156 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-<!-- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %} -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Publications</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f9f9f9;
-    }
-    .publication {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      display: flex;
-      gap: 20px;
-    }
-    .pub-image {
-      width: 150px;
-      height: 150px;
-      background-color: #eee;
-      border-radius: 8px;
-      flex-shrink: 0;
-      background-size: cover;
-      background-position: center;
-    }
-    .pub-info {
-      flex-grow: 1;
-    }
-    .pub-title {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    .pub-authors, .pub-journal {
-      margin-top: 8px;
-      color: #555;
-    }
-    .pub-link {
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Publications</h1>
-
-  <!-- Repeat this block for each paper -->
-  <div class="publication">
-    <div class="pub-image" style="background-image: url('images/ma2023tunable.png');"></div>
-    <div class="pub-info">
-      <div class="pub-title">Tunable and light-weight phononic lattices inspired by spider capture silk</div>
-      <div class="pub-authors">Chao Ma, Shiheng Zhao, Jianbo Zhang, Zheng Chang</div>
-      <div class="pub-journal"><i>Applied Physics A</i>, 129(2), 99 (2023)</div>
-      <div class="pub-link"><a href="https://doi.org/10.1007/s00339-023-06612-8" target="_blank">Read more</a></div>
-    </div>
+<!-- Publication: Ma 2023 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/ma2023tunable.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Tunable and light-weight phononic lattices inspired by spider capture silk</strong><br>
+    Chao Ma, Shiheng Zhao, Jianbo Zhang, Zheng Chang<br>
+    <em>Applied Physics A</em>, 129(2):99, 2023<br>
+    <a href="https://doi.org/10.1007/s00339-023-06612-8" target="_blank">View article</a>
   </div>
+</div>
+<hr>
 
-  <div class="publication">
-    <div class="pub-image" style="background-image: url('images/zhao2021elastic.png');"></div>
-    <div class="pub-info">
-      <div class="pub-title">Elastic wave velocities in finitely pre-stretched soft fibers</div>
-      <div class="pub-authors">Shiheng Zhao, Zheng Chang</div>
-      <div class="pub-journal"><i>International Journal of Solids and Structures</i>, 233, 111208 (2021)</div>
-      <div class="pub-link"><a href="https://doi.org/10.1016/j.ijsolstr.2021.111208" target="_blank">Read more</a></div>
-    </div>
+<!-- Publication: Zhao 2021 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2021elastic.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Elastic wave velocities in finitely pre-stretched soft fibers</strong><br>
+    Shiheng Zhao, Zheng Chang<br>
+    <em>International Journal of Solids and Structures</em>, 233:111208, 2021<br>
+    <a href="https://doi.org/10.1016/j.ijsolstr.2021.111208" target="_blank">View article</a>
   </div>
+</div>
+<hr>
 
-  <!-- Repeat similar blocks for the rest -->
-  <!-- You can manually fill in links to articles on Springer, Elsevier, arXiv, etc., or leave as placeholder if not available -->
-  <!-- Example below for arXiv -->
-  <div class="publication">
-    <div class="pub-image" style="background-image: url('images/zhao2024mechanics.png');"></div>
-    <div class="pub-info">
-      <div class="pub-title">Mechanics of poking a cyst</div>
-      <div class="pub-authors">Shiheng Zhao, Pierre A. Haas</div>
-      <div class="pub-journal"><i>arXiv preprint</i>, arXiv:2408.03716 (2024)</div>
-      <div class="pub-link"><a href="https://arxiv.org/abs/2408.03716" target="_blank">Read more</a></div>
-    </div>
+<!-- Publication: Zhao 2023 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2023microstructure.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Microstructure realization of a lattice-based polar solid for arbitrary elastic waveguiding</strong><br>
+    Shiheng Zhao, Jiaji Chen, Zheng Chang, Guoliang Huang<br>
+    <em>J. Mech. Phys. Solids</em>, 173:105226, 2023<br>
+    <a href="https://doi.org/10.1016/j.jmps.2023.105226" target="_blank">View article</a>
   </div>
+</div>
+<hr>
 
-  <!-- Add more blocks for the rest of your publications as needed -->
+<!-- Publication: Chen 2021 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/chen2021shear.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Shear-wave manipulation by embedded soft devices</strong><br>
+    Linli Chen, Chao Ma, Shiheng Zhao, Pingping Zheng, Qian Zhao, Zheng Chang<br>
+    <em>International Journal of Solids and Structures</em>, 210:136–144, 2021<br>
+    <a href="https://doi.org/10.1016/j.ijsolstr.2020.10.022" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
 
-</body>
-</html>
+<!-- Publication: Zhao 2022 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2022bloch.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Bloch wave propagation in finitely stretched soft lattice</strong><br>
+    Shiheng Zhao, Tao Feng, Han Zhang, Yang Gao, Zheng Chang<br>
+    <em>Mech. Syst. Signal Process.</em>, 181:109487, 2022<br>
+    <a href="https://doi.org/10.1016/j.ymssp.2022.109487" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
 
+<!-- Publication: Feng 2024 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/feng2024tunable.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Tunable topological phase transition in soft Rayleigh beam system with imperfect interfaces</strong><br>
+    Tao Feng, Letian Gan, Shiheng Zhao, Zheng Chang, Weijian Zhou, Siyang Li, Yaoting Xue, Xuxu Yang, Tuck-Whye Wong, Tiefeng Li, et al.<br>
+    <em>International Journal of Mechanical Sciences</em>, 265:108892, 2024<br>
+    <a href="https://doi.org/10.1016/j.ijmecsci.2023.108892" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
 
+<!-- Publication: Zhao 2024 (Cyst) -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2024mechanics.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Mechanics of poking a cyst</strong><br>
+    Shiheng Zhao, Pierre A. Haas<br>
+    <em>arXiv preprint</em> arXiv:2408.03716, 2024<br>
+    <a href="https://arxiv.org/abs/2408.03716" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
+
+<!-- Publication: Tian 2025 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/tian2025moth.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Moth-wing-inspired metasurface for modulating sound amplitude and phase</strong><br>
+    Zhan Tian, Yan Meng, Shiheng Zhao, Yongkang Wang, Zheng Chang<br>
+    <em>Mech. Syst. Signal Process.</em>, 223:111849, 2025<br>
+    <a href="https://doi.org/10.1016/j.ymssp.2024.111849" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
+
+<!-- Publication: Zhao 2024 (Constrained Metamaterial) -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2024constrained.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>A Constrained Mechanical Metamaterial Towards Wave Polarization and Steering Control</strong><br>
+    Shiheng Zhao, Zhan Tian, Jiaji Chen, Heng Jiang, Zheng Chang, Guoliang Huang<br>
+    <em>arXiv preprint</em> arXiv:2410.17627, 2024<br>
+    <a href="https://arxiv.org/abs/2410.17627" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
+
+<!-- Publication: Alber 2025 -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/alber2025model.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>A model for boundary-driven tissue morphogenesis</strong><br>
+    Daniel S. Alber, Shiheng Zhao, Alexandre O. Jacinto, Eric F. Wieschaus, Stanislav Y. Shvartsman, Pierre A. Haas<br>
+    <em>arXiv preprint</em> arXiv:2503.03688, 2025<br>
+    <a href="https://arxiv.org/abs/2503.03688" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
+
+<!-- Publication: Zhao 2025 (Euler Buckling) -->
+<div class="pub-entry">
+  <figure style="float:left; margin-right: 20px; width: 150px;">
+    <img src="/media/publications/zhao2025euler.png" alt="Graphical abstract" style="max-width: 100%;">
+  </figure>
+  <div>
+    <strong>Euler buckling on curved surfaces</strong><br>
+    Shiheng Zhao, Pierre A. Haas<br>
+    <em>arXiv preprint</em> arXiv:2503.04303, 2025<br>
+    <a href="https://arxiv.org/abs/2503.04303" target="_blank">View article</a>
+  </div>
+</div>
+<hr>
