@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
+<!-- {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
@@ -30,7 +30,94 @@ author_profile: true
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
-{% endif %}
+{% endif %} -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    .publication {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .pub-image {
+      width: 150px;
+      height: 150px;
+      background-color: #eee;
+      border-radius: 8px;
+      flex-shrink: 0;
+      background-size: cover;
+      background-position: center;
+    }
+    .pub-info {
+      flex-grow: 1;
+    }
+    .pub-title {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .pub-authors, .pub-journal {
+      margin-top: 8px;
+      color: #555;
+    }
+    .pub-link {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Publications</h1>
+
+  <!-- Repeat this block for each paper -->
+  <div class="publication">
+    <div class="pub-image" style="background-image: url('images/ma2023tunable.png');"></div>
+    <div class="pub-info">
+      <div class="pub-title">Tunable and light-weight phononic lattices inspired by spider capture silk</div>
+      <div class="pub-authors">Chao Ma, Shiheng Zhao, Jianbo Zhang, Zheng Chang</div>
+      <div class="pub-journal"><i>Applied Physics A</i>, 129(2), 99 (2023)</div>
+      <div class="pub-link"><a href="https://doi.org/10.1007/s00339-023-06612-8" target="_blank">Read more</a></div>
+    </div>
+  </div>
+
+  <div class="publication">
+    <div class="pub-image" style="background-image: url('images/zhao2021elastic.png');"></div>
+    <div class="pub-info">
+      <div class="pub-title">Elastic wave velocities in finitely pre-stretched soft fibers</div>
+      <div class="pub-authors">Shiheng Zhao, Zheng Chang</div>
+      <div class="pub-journal"><i>International Journal of Solids and Structures</i>, 233, 111208 (2021)</div>
+      <div class="pub-link"><a href="https://doi.org/10.1016/j.ijsolstr.2021.111208" target="_blank">Read more</a></div>
+    </div>
+  </div>
+
+  <!-- Repeat similar blocks for the rest -->
+  <!-- You can manually fill in links to articles on Springer, Elsevier, arXiv, etc., or leave as placeholder if not available -->
+  <!-- Example below for arXiv -->
+  <div class="publication">
+    <div class="pub-image" style="background-image: url('images/zhao2024mechanics.png');"></div>
+    <div class="pub-info">
+      <div class="pub-title">Mechanics of poking a cyst</div>
+      <div class="pub-authors">Shiheng Zhao, Pierre A. Haas</div>
+      <div class="pub-journal"><i>arXiv preprint</i>, arXiv:2408.03716 (2024)</div>
+      <div class="pub-link"><a href="https://arxiv.org/abs/2408.03716" target="_blank">Read more</a></div>
+    </div>
+  </div>
+
+  <!-- Add more blocks for the rest of your publications as needed -->
+
+</body>
+</html>
 
 
