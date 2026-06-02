@@ -14,84 +14,41 @@ redirect_from:
   <p>Before joining MPI-PKS, I received my B.S. degree in Engineering Mechanics (2020) and M.S. degree in Applied Mechanics (2023) from China Agricultural University.</p>
 </section>
 
+<section class="research-citation-box">
+  <p class="profile-kicker">Research overview</p>
+  <p class="research-citation-box__lead">I work on the mechanics of soft and biological matter, where large deformation, geometry, growth, and activity can produce behavior that is absent from classical linear elasticity.</p>
+  <p>In biological mechanics, I study how local forcing and boundary-driven stresses shape tissues and soft shells, including cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>) and tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>, co-first author). In elastic instabilities, I am interested in how curvature and thickness reshape familiar mechanical ideas, from buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick-plate stretching and bending (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>). I also work on active and metamaterial mechanics, including nonlinear odd elasticity (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>) and elastic waveguiding in designed soft media (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>).</p>
+</section>
+
 <section class="research-themes">
   <div class="section-heading">
     <p class="profile-kicker">Research themes</p>
-    <h2>Mechanics across growth, instability, and wave control</h2>
+    <h2>Four connected directions</h2>
   </div>
 
   <div class="theme-grid">
-    <article class="theme-card">
-      <span class="theme-card__index">01</span>
-      <h3>Tissue morphogenesis and biological mechanics</h3>
-      <p>I study how boundary forces, stresses, and soft-material response organize shape change in developing tissues and biological structures.</p>
-      <p class="theme-card__work">Key work: <em>PNAS</em> 2025, <em>PRL</em> 2025.</p>
+    <article class="research-theme">
+      <span class="research-theme__index">01</span>
+      <h3>Tissue morphogenesis</h3>
+      <p>Boundary forces and growth can organize tissue-scale shape change, as in our boundary-driven morphogenesis model (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>).</p>
     </article>
 
-    <article class="theme-card">
-      <span class="theme-card__index">02</span>
-      <h3>Elastic instabilities in curved and thick structures</h3>
-      <p>I explore how geometry changes classical instabilities, from Euler buckling on curved surfaces to stretching and bending in thick elastic plates.</p>
-      <p class="theme-card__work">Key work: <em>PRL</em> 2025, arXiv 2026.</p>
+    <article class="research-theme">
+      <span class="research-theme__index">02</span>
+      <h3>Instabilities and geometry</h3>
+      <p>Geometry modifies classical instabilities and effective elastic moduli, from curved-surface buckling (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick elastic plates (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>).</p>
     </article>
 
-    <article class="theme-card">
-      <span class="theme-card__index">03</span>
-      <h3>Active and nonlinear elasticity</h3>
-      <p>I am developing mechanical descriptions for active, nonconservative solids, including nonlinear odd elasticity beyond the small-deformation regime.</p>
-      <p class="theme-card__work">Key work: arXiv 2026.</p>
+    <article class="research-theme">
+      <span class="research-theme__index">03</span>
+      <h3>Active nonlinear elasticity</h3>
+      <p>Active materials can break conservative elastic response; I am developing nonlinear descriptions of odd elasticity beyond small deformations (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>).</p>
     </article>
 
-    <article class="theme-card">
-      <span class="theme-card__index">04</span>
-      <h3>Elastic metamaterials and wave control</h3>
-      <p>I design and analyze soft mechanical systems for elastic waveguiding, polarization control, and tunable phononic response.</p>
-      <p class="theme-card__work">Key work: <em>JMPS</em> 2023, <em>MSSP</em> 2022.</p>
-    </article>
-  </div>
-</section>
-
-<section class="selected-work">
-  <div class="section-heading">
-    <p class="profile-kicker">Selected first-author work</p>
-    <h2>Representative publications</h2>
-  </div>
-
-  <div class="paper-list paper-list--compact">
-    <article class="paper-row paper-row--featured">
-      <span class="paper-year">2025</span>
-      <div class="paper-row__body">
-        <h3>Mechanics of poking a cyst</h3>
-        <p><em>Physical Review Letters</em>, Editors' Suggestion. <a href="https://doi.org/10.1103/PhysRevLett.134.228402">Journal link</a></p>
-      </div>
-      <span class="paper-badge">First author</span>
-    </article>
-
-    <article class="paper-row paper-row--featured">
-      <span class="paper-year">2025</span>
-      <div class="paper-row__body">
-        <h3>Euler buckling on curved surfaces</h3>
-        <p><em>Physical Review Letters</em>. <a href="https://doi.org/10.1103/63py-ph5s">Journal link</a></p>
-      </div>
-      <span class="paper-badge">First author</span>
-    </article>
-
-    <article class="paper-row paper-row--featured">
-      <span class="paper-year">2025</span>
-      <div class="paper-row__body">
-        <h3>A model for boundary-driven tissue morphogenesis</h3>
-        <p><em>PNAS</em>. <a href="https://doi.org/10.1073/pnas.2505160122">Journal link</a></p>
-      </div>
-      <span class="paper-badge paper-badge--soft">Co-first author</span>
-    </article>
-
-    <article class="paper-row paper-row--featured">
-      <span class="paper-year">2023</span>
-      <div class="paper-row__body">
-        <h3>Microstructure realization of a lattice-based polar solid for arbitrary elastic waveguiding</h3>
-        <p><em>Journal of the Mechanics and Physics of Solids</em>. <a href="https://doi.org/10.1016/j.jmps.2023.105226">Journal link</a></p>
-      </div>
-      <span class="paper-badge">First author</span>
+    <article class="research-theme">
+      <span class="research-theme__index">04</span>
+      <h3>Mechanical metamaterials</h3>
+      <p>Designed microstructures can steer, polarize, and guide elastic waves in soft media (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>; <a href="https://arxiv.org/abs/2410.17627">arXiv 2024</a>).</p>
     </article>
   </div>
 </section>

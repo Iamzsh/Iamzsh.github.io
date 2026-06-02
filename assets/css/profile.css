@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Profile and publication refinements
-   ========================================================================== */
+/* Profile and publication refinements loaded directly by the site head. */
 
 :root {
   --profile-paper: #ffffff;
@@ -76,15 +74,20 @@ html[data-theme="dark"] .masthead {
 }
 
 .home-hero,
-.pub-hero {
+.pub-hero,
+.research-citation-box {
   margin: 0.4rem 0 2rem;
-  padding: 1.15rem 0 1.15rem 1.25rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--profile-line);
   border-left: 4px solid var(--profile-teal);
-  background: linear-gradient(90deg, rgba(31, 113, 120, 0.08), rgba(31, 113, 120, 0));
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(31, 113, 120, 0.08), rgba(255, 255, 255, 0.88));
+  box-shadow: var(--profile-shadow);
 }
 
 .home-lede,
-.pub-lede {
+.pub-lede,
+.research-citation-box__lead {
   max-width: 780px;
   margin: 0 0 1rem;
   color: var(--profile-ink);
@@ -99,7 +102,8 @@ html[data-theme="dark"] .masthead {
 
 .home-hero a,
 .pub-page a,
-.selected-work a {
+.research-citation-box a,
+.research-theme a {
   color: var(--profile-teal);
   font-weight: 700;
   text-decoration: none;
@@ -107,7 +111,8 @@ html[data-theme="dark"] .masthead {
 
 .home-hero a:hover,
 .pub-page a:hover,
-.selected-work a:hover {
+.research-citation-box a:hover,
+.research-theme a:hover {
   color: var(--profile-coral);
   text-decoration: none;
 }
@@ -149,19 +154,21 @@ html[data-theme="dark"] .masthead {
 
 .theme-card,
 .feature-paper,
-.paper-row,
-.pub-card {
+.pub-card,
+.research-theme {
   background: var(--profile-paper);
   border: 1px solid var(--profile-line);
   border-radius: 8px;
   box-shadow: var(--profile-shadow);
 }
 
-.theme-card {
+.theme-card,
+.research-theme {
   padding: 1rem;
 }
 
-.theme-card::before {
+.theme-card::before,
+.research-theme::before {
   display: block;
   width: 2.4rem;
   height: 3px;
@@ -170,15 +177,18 @@ html[data-theme="dark"] .masthead {
   content: "";
 }
 
-.theme-card:nth-child(2)::before {
+.theme-card:nth-child(2)::before,
+.research-theme:nth-child(2)::before {
   background: var(--profile-sage);
 }
 
-.theme-card:nth-child(3)::before {
+.theme-card:nth-child(3)::before,
+.research-theme:nth-child(3)::before {
   background: var(--profile-coral);
 }
 
-.theme-card:nth-child(4)::before {
+.theme-card:nth-child(4)::before,
+.research-theme:nth-child(4)::before {
   background: var(--profile-gold);
 }
 
@@ -194,7 +204,8 @@ html[data-theme="dark"] .masthead {
   border-top-color: var(--profile-gold);
 }
 
-.theme-card__index {
+.theme-card__index,
+.research-theme__index {
   color: var(--profile-coral);
   font-size: 0.78rem;
   font-weight: 700;
@@ -202,8 +213,8 @@ html[data-theme="dark"] .masthead {
 
 .theme-card h3,
 .feature-paper h3,
-.paper-row h3,
-.pub-card h3 {
+.pub-card h3,
+.research-theme h3 {
   margin: 0.35rem 0 0.45rem;
   color: var(--profile-ink);
   font-size: 1rem;
@@ -212,36 +223,18 @@ html[data-theme="dark"] .masthead {
 
 .theme-card p,
 .feature-paper p,
-.paper-row p,
-.pub-card p {
+.pub-card p,
+.research-theme p {
   margin: 0.35rem 0;
 }
 
 .theme-card__work,
 .feature-paper p,
-.paper-row p,
 .pub-authors,
-.pub-venue {
+.pub-venue,
+.research-theme p {
   color: var(--profile-muted);
   font-size: 0.92rem;
-}
-
-.paper-list {
-  display: grid;
-  gap: 0.75rem;
-}
-
-.paper-row {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 0.75rem;
-  align-items: start;
-  padding: 0.9rem 1rem;
-}
-
-.paper-year {
-  color: var(--profile-teal);
-  font-weight: 800;
 }
 
 .paper-badge {
@@ -361,12 +354,9 @@ html[data-theme="dark"] .masthead {
 
 @media (max-width: 719px) {
   .home-hero,
-  .pub-hero {
+  .pub-hero,
+  .research-citation-box {
     padding-left: 1rem;
-  }
-
-  .paper-row {
-    grid-template-columns: minmax(0, 1fr);
   }
 
   .pub-card__footer {

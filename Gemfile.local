@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+# Local preview bundle for older macOS system Ruby versions.
+# The production GitHub Pages build can continue using Gemfile.
+gem 'github-pages', '228'
+gem 'webrick', '~> 1.8'
+gem 'connection_pool', '2.5.0'
+gem 'ffi', '>= 1.15.5', '< 1.17'
+gem 'nokogiri', '~> 1.13.10'

@@ -1,0 +1,9 @@
+# Local Jekyll preview overrides.
+# Use with:
+#   bundle exec jekyll serve --config _config.yml,_config_local.yml --host 127.0.0.1 --port 4000 --livereload
+
+url: "http://127.0.0.1:4000"
+baseurl: ""
+future: true
+show_drafts: false
+incremental: false
