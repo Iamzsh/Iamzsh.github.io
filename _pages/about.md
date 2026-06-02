@@ -10,8 +10,8 @@ redirect_from:
 <section class="home-hero">
   <p class="profile-kicker">Continuum mechanics of soft and biological matter</p>
   <p class="home-lede">I'm Shiheng Zhao (赵世恒), a Ph.D. student at the <a href="https://www.pks.mpg.de/self-organization-of-multicellular-systems">Max Planck Institute for the Physics of Complex Systems (MPI-PKS)</a>.</p>
-  <p class="research-citation-box__lead">I work on the mechanics of soft and biological matter, where large deformation, geometry, growth, and activity can produce behavior that is absent from classical linear elasticity.</p>
-  <p>In biological mechanics, I study how local forcing and boundary-driven stresses shape tissues and soft shells, including cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>) and tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>). In elastic instabilities, I am interested in how curvature and thickness reshape familiar mechanical ideas, from buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick-plate stretching and bending (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>). I also work on active and metamaterial mechanics, including nonlinear odd elasticity (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>) and elastodynamics in designed/soft media (<a href="https://doi.org/10.1016/j.ijsolstr.2021.111208">IJSS 2021</a>, <a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>).</p>
+  <p class="research-citation-box__lead">My current research is broadly concerned with the continuum mechanics of soft and biological matter, where geometry, growth, large deformation, and activity can all influence mechanical response.</p>
+  <p>I use theoretical and computational approaches to study problems in biological mechanics, elastic instabilities, and elastodynamics. Examples include cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>), boundary-driven tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>), buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>), and wave propagation in soft or architected media (<a href="https://doi.org/10.1016/j.ijsolstr.2021.111208">IJSS 2021</a>, <a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>). More generally, I am interested in pattern formation and the physics and mechanics of nonequilibrium soft systems.</p>
   <p>Before joining MPI-PKS, I received my B.S. degree in Engineering Mechanics (2020) and M.S. degree in Applied Mechanics (2023) from China Agricultural University.</p>
 </section>
 
@@ -24,27 +24,27 @@ redirect_from:
     <article class="research-theme">
       <span class="research-theme__index">01</span>
       <h3>Tissue morphogenesis</h3>
-      <p>Boundary forces and growth can organize tissue-scale shape change, as in our boundary-driven morphogenesis model (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>).</p>
+      <p>How boundary forces, growth, and material response contribute to tissue-scale shape change. Refs: <a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>.</p>
     </article>
 
     <article class="research-theme">
       <span class="research-theme__index">02</span>
       <h3>Instabilities and geometry</h3>
-      <p>Geometry modifies classical instabilities and effective elastic moduli, from curved-surface buckling (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick elastic plates (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>).</p>
+      <p>How curvature, thickness, and geometric constraints modify elastic instabilities and effective mechanical descriptions. Refs: <a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>, <a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>.</p>
     </article>
 
     <article class="research-theme">
       <span class="research-theme__index">03</span>
-      <h3>Active nonlinear elasticity</h3>
-      <p>Active materials can break conservative elastic response; so what happend for the the purely nonlinear instability? (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>).</p>
+      <h3>Active and nonequilibrium elasticity</h3>
+      <p>How activity and nonconservative stresses may affect nonlinear elastic response and mechanical instabilities. Refs: <a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>.</p>
     </article>
 
     <article class="research-theme">
       <span class="research-theme__index">04</span>
       <h3>Mechanical metamaterials and elastodynamics</h3>
-      <p>Designed microstructures can steer, polarize, and guide elastic waves in designed polar lattice (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>; <a href="https://arxiv.org/abs/2410.17627">arXiv 2024</a>).</p>
+      <p>How designed microstructures can provide controlled settings for studying elastic wave propagation, polarization, and guiding. Refs: <a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>, <a href="https://arxiv.org/abs/2410.17627">arXiv 2024</a>.</p>
     </article>
   </div>
 </section>
 
-<p class="profile-closing">If you are interested in my research, whether seeking collaboration or simply having a chat, please feel free to send me an email.</p>
+<p class="profile-closing">If you are interested in my research or have any questions, please feel free to email me.</p>
