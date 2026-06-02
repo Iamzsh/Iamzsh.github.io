@@ -17,12 +17,12 @@ redirect_from:
 <section class="research-citation-box">
   <p class="profile-kicker">Research overview</p>
   <p class="research-citation-box__lead">I work on the mechanics of soft and biological matter, where large deformation, geometry, growth, and activity can produce behavior that is absent from classical linear elasticity.</p>
-  <p>In biological mechanics, I study how local forcing and boundary-driven stresses shape tissues and soft shells, including cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>) and tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>, co-first author). In elastic instabilities, I am interested in how curvature and thickness reshape familiar mechanical ideas, from buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick-plate stretching and bending (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>). I also work on active and metamaterial mechanics, including nonlinear odd elasticity (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>) and elastic waveguiding in designed soft media (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>).</p>
+  <p>In biological mechanics, I study how local forcing and boundary-driven stresses shape tissues and soft shells, including cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>) and tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>). In elastic instabilities, I am interested in how curvature and thickness reshape familiar mechanical ideas, from buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>) to thick-plate stretching and bending (<a href="https://arxiv.org/abs/2606.01889">arXiv 2026</a>). I also work on active and metamaterial mechanics, including nonlinear odd elasticity (<a href="https://arxiv.org/abs/2605.02476">arXiv 2026</a>) and elastodynamics in designed soft media (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>).</p>
 </section>
 
 <section class="research-themes">
   <div class="section-heading">
-    <p class="profile-kicker">Research themes</p>
+    <p class="profile-kicker">Research interests</p>
     <h2>Four connected directions</h2>
   </div>
 
@@ -47,7 +47,7 @@ redirect_from:
 
     <article class="research-theme">
       <span class="research-theme__index">04</span>
-      <h3>Mechanical metamaterials</h3>
+      <h3>Mechanical metamaterials and elastodynamics</h3>
       <p>Designed microstructures can steer, polarize, and guide elastic waves in soft media (<a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>; <a href="https://arxiv.org/abs/2410.17627">arXiv 2024</a>).</p>
     </article>
   </div>
