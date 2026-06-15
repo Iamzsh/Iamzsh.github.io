@@ -199,7 +199,7 @@ html[data-theme="dark"] .masthead {
 }
 
 .pub-section--journals {
-  margin-top: 1.15rem;
+  margin-top: 2.4rem;
 }
 
 .pub-list {
@@ -207,39 +207,46 @@ html[data-theme="dark"] .masthead {
   gap: 0.9rem;
 }
 
+.pub-list--peer-reviewed {
+  gap: 0;
+}
+
+.pub-year-group {
+  margin-top: 1.25rem;
+}
+
+.pub-year-group + .pub-year-group {
+  margin-top: 1.8rem;
+}
+
+.pub-year {
+  margin: 0 0 0.55rem;
+  color: var(--profile-coral);
+  border-bottom: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
 .pub-card {
   padding: 1rem;
 }
 
-.pub-card--highlight {
-  border-left: 4px solid var(--profile-teal);
+.pub-section--journals .pub-card {
+  padding: 1.05rem 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--profile-line);
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.pub-card__meta,
-.pub-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+.pub-section--journals .pub-card:first-child {
+  border-top: 0;
 }
 
-.pub-card__meta {
-  margin-bottom: 0.65rem;
-}
-
-.pub-card__meta span,
-.pub-tags span {
-  padding: 0.2rem 0.5rem;
-  color: var(--profile-muted);
-  background: var(--profile-soft);
-  border: 1px solid var(--profile-line);
-  border-radius: 6px;
-  font-size: 0.74rem;
-  line-height: 1.25;
-}
-
-.pub-card__meta span:first-child {
-  color: var(--profile-teal);
-  font-weight: 800;
+.pub-section--journals .pub-card h3 {
+  margin-top: 0.25rem;
 }
 
 .pub-card__footer {
@@ -249,6 +256,10 @@ html[data-theme="dark"] .masthead {
   align-items: center;
   justify-content: space-between;
   margin-top: 0.8rem;
+}
+
+.pub-section--journals .pub-card__footer {
+  margin-top: 0.65rem;
 }
 
 .pub-button {
@@ -269,6 +280,19 @@ html[data-theme="dark"] .masthead {
 .pub-button:hover {
   color: #ffffff !important;
   background: var(--profile-coral);
+}
+
+.pub-section--journals .pub-button {
+  min-height: 1.8rem;
+  padding: 0.25rem 0.65rem;
+  color: var(--profile-teal) !important;
+  background: transparent;
+  border: 1px solid var(--profile-line);
+}
+
+.pub-section--journals .pub-button:hover {
+  color: var(--profile-coral) !important;
+  background: rgba(182, 111, 82, 0.08);
 }
 
 @media (max-width: 719px) {

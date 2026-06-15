@@ -1,6 +1,9 @@
 # Local Jekyll preview overrides.
 # Use with:
-#   bundle exec jekyll serve --config _config.yml,_config_local.yml --host 127.0.0.1 --port 4000 --livereload
+#   ./scripts/serve-local.sh
+#
+# Use another port with:
+#   PORT=4001 ./scripts/serve-local.sh
 
 url: "http://127.0.0.1:4000"
 baseurl: ""
