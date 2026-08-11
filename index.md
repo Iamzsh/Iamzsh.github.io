@@ -9,7 +9,6 @@ body_class: page-home
   <div class="home-hero__copy">
     <p class="eyebrow">Shiheng Zhao</p>
     <h1 id="home-title">Mechanics, geometry, and living matter.</h1>
-    <p class="home-hero__role">Ph.D. student at the Max Planck Institute for the Physics of Complex Systems.</p>
     <p class="home-hero__text">I study how growth, geometry, and activity shape deformation and instability in soft and biological systems, using theoretical and computational approaches in continuum mechanics.</p>
     <div class="home-hero__actions">
       <a class="text-link" href="{{ base_path }}/about/">About me <span class="link-arrow" aria-hidden="true">&rarr;</span></a>
@@ -17,9 +16,11 @@ body_class: page-home
     </div>
   </div>
 
-  <div class="elastic-field" data-elastic-field>
-    <canvas aria-label="Interactive elastic field. Click to create and combine deformations." title="Click to create a deformation."></canvas>
-    <p class="elastic-field__caption">Click to create a deformation field.</p>
+  <div class="elastic-field-panel">
+    <div class="elastic-field" data-elastic-field>
+      <canvas aria-label="Interactive elastic strain field. Move the pointer to deform it, or click and drag to stretch it." title="Elastic strain field: move to deform, drag to stretch."></canvas>
+    </div>
+    <p class="elastic-field__caption">Elastic strain field: move to deform, drag to stretch.</p>
   </div>
 </section>
 

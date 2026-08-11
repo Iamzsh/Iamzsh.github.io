@@ -352,15 +352,15 @@ html[data-theme='dark'] .personal-theme-glyph::after {
   width: 100%;
   height: 100%;
   cursor: crosshair;
+  touch-action: none;
 }
 
 .elastic-field__caption {
-  position: absolute;
-  right: 1rem;
-  bottom: 0.75rem;
-  margin: 0;
+  margin: 0.55rem 0 0;
   color: var(--personal-muted);
   font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: right;
 }
 
 .home-section {
@@ -486,12 +486,12 @@ html[data-theme='dark'] .personal-theme-glyph::after {
   display: grid;
   padding: 3.65rem 0 2.8rem;
   grid-template-columns: minmax(0, 1fr) 15rem;
-  gap: clamp(2.5rem, 5vw, 4rem);
+  gap: clamp(1.35rem, 2.5vw, 2.5rem);
   align-items: start;
 }
 
 .about-hero__copy {
-  max-width: 39rem;
+  max-width: 46rem;
   padding-bottom: 0;
 }
 
@@ -505,10 +505,12 @@ html[data-theme='dark'] .personal-theme-glyph::after {
 }
 
 .about-hero__copy > p:not(.eyebrow):not(.about-hero__role) {
-  max-width: 42rem;
+  max-width: none;
   margin: 0.8rem 0 0;
   color: var(--personal-muted);
   font-size: 0.96rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .about-hero__role + p {
@@ -519,13 +521,14 @@ html[data-theme='dark'] .personal-theme-glyph::after {
   display: grid;
   gap: 1.35rem;
   align-items: start;
+  align-self: center;
 }
 
 .about-portrait {
   width: 13rem;
   height: 13rem;
   margin: 0;
-  justify-self: end;
+  justify-self: start;
   overflow: hidden;
   background: var(--personal-accent-soft);
 }
@@ -560,21 +563,43 @@ html[data-theme='dark'] .personal-theme-glyph::after {
 .about-contact__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem 0.6rem;
+  gap: 0.6rem;
   margin-top: 1rem;
 }
 
 .about-contact__links a {
-  display: inline-flex;
-  gap: 0.24rem;
+  display: inline-grid;
+  width: 2.05rem;
+  height: 2.05rem;
   padding: 0;
   align-items: center;
-  font-size: 0.74rem;
-  font-weight: 700;
+  justify-items: center;
+  border: 1px solid var(--personal-line);
+  border-radius: 50%;
+  font-size: 1.02rem;
+  line-height: 1;
+  transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
-.about-contact__links .external-arrow {
-  font-size: 0.7rem;
+.about-contact__links a:hover {
+  transform: translateY(-1px);
+  border-color: currentColor;
+}
+
+.about-contact__link--scholar {
+  color: #28627c !important;
+}
+
+.about-contact__link--orcid {
+  color: #6c9723 !important;
+}
+
+.about-contact__link--bluesky {
+  color: #1185fe !important;
+}
+
+.about-contact__link--researchgate {
+  color: #008f83 !important;
 }
 
 .coming-soon {
@@ -876,6 +901,10 @@ html[data-theme='dark'] .personal-theme-glyph::after {
     font-size: 0.97rem;
   }
 
+  .about-hero__copy > p:not(.eyebrow):not(.about-hero__role) {
+    text-align: left;
+  }
+
   .home-section {
     padding: 3.15rem 0;
   }
@@ -914,6 +943,10 @@ html[data-theme='dark'] .personal-theme-glyph::after {
 
   .about-hero {
     padding: 3.4rem 0 3rem;
+  }
+
+  .about-side {
+    align-self: start;
   }
 
   .about-hero__copy {
