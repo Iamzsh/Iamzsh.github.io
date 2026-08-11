@@ -17,9 +17,9 @@ body_class: page-home
 
   <div class="elastic-field-panel">
     <div class="elastic-field" data-elastic-field>
-      <canvas aria-label="Interactive elastic strain field. Move the pointer to deform it, or click and drag to stretch it." title="Elastic strain field: move to deform, drag to stretch."></canvas>
+      <canvas aria-label="Interactive elastic strain field. Move the pointer to deform it, or click and drag to stretch it." title="Move or drag to generate a strain field."></canvas>
     </div>
-    <p class="elastic-field__caption">Elastic strain field: move to deform, drag to stretch.</p>
+    <p class="elastic-field__caption"> Move or drag to generate a strain field.</p>
   </div>
 </section>
 
