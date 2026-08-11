@@ -7,7 +7,6 @@ body_class: page-home
 
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
-    <p class="eyebrow">Shiheng Zhao</p>
     <h1 id="home-title">Mechanics, geometry, and living matter.</h1>
     <p class="home-hero__text">I study how growth, geometry, and activity shape deformation and instability in soft and biological systems, using theoretical and computational approaches in continuum mechanics.</p>
     <div class="home-hero__actions">
