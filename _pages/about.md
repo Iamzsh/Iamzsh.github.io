@@ -1,22 +1,32 @@
 ---
-permalink: /
+layout: personal
 title: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+permalink: /about/
+body_class: page-about
 ---
 
-<section class="home-hero">
-  <p class="home-lede">I'm Shiheng Zhao (赵世恒), a Ph.D. student at the <a href="https://www.pks.mpg.de/self-organization-of-multicellular-systems">Max Planck Institute for the Physics of Complex Systems (MPI-PKS)</a>.</p>
-  <p>My current research is broadly concerned with the continuum mechanics of soft and biological matter, where geometry, growth, large deformation, and activity can all influence mechanical response. I use theoretical and computational approaches to study how soft materials and biological structures deform, become unstable, and transmit mechanical signals. Recent examples include cyst indentation (<a href="https://doi.org/10.1103/PhysRevLett.134.228402">PRL 2025</a>), boundary-driven tissue morphogenesis (<a href="https://doi.org/10.1073/pnas.2505160122">PNAS 2025</a>), buckling on curved surfaces (<a href="https://doi.org/10.1103/63py-ph5s">PRL 2025</a>), and elastodynamics in soft or architected media (<a href="https://doi.org/10.1016/j.ijsolstr.2021.111208">IJSS 2021</a>, <a href="https://doi.org/10.1016/j.jmps.2023.105226">JMPS 2023</a>).</p>
-  <p>My research interests include:</p>
-  <ul class="research-interest-list">
-    <li>Biological and tissue mechanics</li>
-    <li>Elastic instabilities shaped by geometry, growth, and large deformation</li>
-    <li>Active and nonequilibrium soft-matter mechanics</li>
-    <li>Mechanical metamaterials and elastodynamics</li>
-  </ul>
+<section class="about-hero" aria-labelledby="about-title">
+  <div class="about-hero__copy">
+    <p class="eyebrow">About me</p>
+    <h1 id="about-title">Shiheng Zhao</h1>
+    <p class="about-hero__role">Ph.D. student, Max Planck Institute for the Physics of Complex Systems</p>
+    <p>I grew up in a small mountain village on the northern foothills of the <a href="https://en.wikipedia.org/wiki/Dabie_Mountains" target="_blank" rel="noopener">Dabie Mountains</a>. I enjoy natural landscapes, fishing, and spending time with cats and dogs.</p>
+    <p>After finishing high school, I moved to Beijing, where I studied and lived for seven years. I received my B.S. in Engineering Mechanics and M.S. in Applied Mechanics from China Agricultural University. In August 2023, I came to Dresden to begin my Ph.D. research with <a href="https://www.pks.mpg.de/self-organization-of-multicellular-systems" target="_blank" rel="noopener">Pierre Haas</a>.</p>
+    <p>I plan to graduate in spring 2027.</p>
+    <p>If you are interested in my research or would like to explore a collaboration, you are welcome to send me an email.</p>
+  </div>
+  <div class="about-side">
+    <figure class="about-portrait">
+      <img src="{{ base_path }}/images/prot.JPG" alt="Shiheng Zhao" loading="eager">
+    </figure>
+    <aside class="about-contact" aria-label="Contact details">
+      <p class="eyebrow">Contact</p>
+      <p class="about-contact__email">zhao <span>AT</span> pks <span>DOT</span> mpg <span>DOT</span> de</p>
+      <div class="about-contact__links">
+        <a href="https://scholar.google.com/citations?user=4JhQk2oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span class="external-arrow" aria-hidden="true">&#8599;</span></a>
+        <a href="http://orcid.org/0009-0003-0024-5999" target="_blank" rel="noopener">ORCID <span class="external-arrow" aria-hidden="true">&#8599;</span></a>
+        <a href="https://bsky.app/profile/zhaoshh.bsky.social" target="_blank" rel="noopener">Bluesky <span class="external-arrow" aria-hidden="true">&#8599;</span></a>
+      </div>
+    </aside>
+  </div>
 </section>
-
-<p class="profile-closing">If you are interested in my research or have any questions, please feel free to email me.</p>

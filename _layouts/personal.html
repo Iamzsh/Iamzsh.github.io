@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+{% include base_path %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="personal-shell {{ page.body_class | default: '' }}">
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="personal-header">
+      <div class="personal-header__inner">
+        <div class="personal-header__controls">
+          <button class="personal-icon-button personal-nav-toggle" type="button" aria-expanded="false" aria-controls="personal-navigation" data-nav-toggle title="Toggle navigation">
+            <span class="personal-nav-glyph" aria-hidden="true"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <nav class="personal-nav" id="personal-navigation" aria-label="Primary navigation" data-personal-nav>
+            {% assign current_url = page.url | replace: 'index.html', '' %}
+            {% for link in site.data.navigation.main %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = base_path %}
+              {% endif %}
+              <a href="{{ domain }}{{ link.url }}"{% if current_url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+            {% endfor %}
+          </nav>
+          <button class="personal-icon-button" id="personal-theme-toggle" type="button" title="Toggle color theme" aria-label="Toggle color theme">
+            <span class="personal-theme-glyph" aria-hidden="true" data-theme-icon></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="personal-main" id="content" tabindex="-1">
+      {{ content }}
+    </main>
+
+    <footer class="personal-footer">
+      <div class="personal-footer__inner">
+        <div>
+          <p class="personal-footer__name">{{ site.name | default: site.title }}</p>
+          <p>Continuum mechanics of soft and biological matter</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ base_path }}/assets/js/personal-site.js" defer></script>
+  </body>
+</html>
