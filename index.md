@@ -18,9 +18,9 @@ body_class: page-home
 
   <div class="elastic-field-panel">
     <div class="elastic-field" data-elastic-field>
-      <canvas aria-label="Interactive elastic strain field. Move the pointer to deform it, or click and drag to stretch it." title="Elastic strain field: move to deform, drag to stretch."></canvas>
+      <canvas aria-label="Interactive linear-elastic sheet with fixed outer boundaries. Click a small local patch and drag to view its minimum-energy displacement field." title="Click and drag a local patch of the elastic sheet."></canvas>
     </div>
-    <p class="elastic-field__caption">Elastic strain field: move to deform, drag to stretch.</p>
+    <p class="elastic-field__caption">Click and drag to deform an elastic sheet.</p>
   </div>
 </section>
 
