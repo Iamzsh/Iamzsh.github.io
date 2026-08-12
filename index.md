@@ -7,7 +7,6 @@ body_class: page-home
 
 <section class="home-hero" aria-labelledby="home-title">
   <div class="home-hero__copy">
-    <p class="eyebrow">Shiheng Zhao</p>
     <h1 id="home-title">Mechanics, geometry, and living matter.</h1>
     <p class="home-hero__text">I study how growth, geometry, and activity shape deformation and instability in soft and biological systems, using theoretical and computational approaches in continuum mechanics.</p>
     <div class="home-hero__actions">
@@ -18,9 +17,9 @@ body_class: page-home
 
   <div class="elastic-field-panel">
     <div class="elastic-field" data-elastic-field>
-      <canvas aria-label="Interactive linear-elastic sheet with fixed outer boundaries. Click a small local patch and drag to view its minimum-energy displacement field." title="Click and drag a local patch of the elastic sheet."></canvas>
+      <canvas aria-label="Interactive linear-elastic sheet with fixed outer boundaries. Click a small local patch and drag to view its minimum-energy displacement field. Move the pointer to deform it, or click and drag to stretch it." title="Click and drag a local patch of the elastic sheet. Move or drag to generate a strain field."></canvas>
     </div>
-    <p class="elastic-field__caption">Click and drag to deform an elastic sheet.</p>
+    <p class="elastic-field__caption">Click and drag to deform an elastic sheet. Move or drag to generate a strain field.</p>
   </div>
 </section>
 
