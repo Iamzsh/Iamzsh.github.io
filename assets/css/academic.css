@@ -1,0 +1,247 @@
+/* A quiet presentation layer; publication entries retain profile.css's layout. */
+
+body.personal-shell {
+  --personal-bg: #fff;
+  --personal-surface: #fff;
+  --personal-ink: #292c31;
+  --personal-muted: #646870;
+  --personal-accent: #4d6587;
+  --personal-accent-strong: #354d70;
+  --personal-accent-soft: #edf1f6;
+  --personal-rust: #626d7c;
+  --personal-line: #e2e5e9;
+  --personal-focus: #4d6587;
+}
+
+html[data-theme="dark"] body.personal-shell {
+  --personal-bg: #202124;
+  --personal-surface: #27282d;
+  --personal-ink: #e9e9ec;
+  --personal-muted: #b6b8c0;
+  --personal-accent: #a6bbdc;
+  --personal-accent-strong: #c3d2e9;
+  --personal-accent-soft: #313a48;
+  --personal-rust: #b7c1d0;
+  --personal-line: #3c3e45;
+  --personal-focus: #a6bbdc;
+}
+
+.personal-header { position: relative; border: 0; }
+.personal-header__inner,
+.personal-footer__inner {
+  width: min(920px, calc(100% - 48px));
+  min-height: 76px;
+  gap: 24px;
+}
+.personal-header__inner { justify-content: space-between; }
+.page-home .personal-header__inner { justify-content: flex-end; }
+.personal-brand__name { font-size: 16px; font-weight: 600; }
+.personal-header__controls { gap: 20px; }
+.personal-nav { gap: 26px; }
+.personal-nav a { padding: 5px 0; font-size: 14px; font-weight: 400; }
+.personal-icon-button { width: 30px; height: 30px; border: 0; }
+.personal-main { min-height: calc(100vh - 154px); }
+.personal-footer { border: 0; }
+.personal-footer__inner {
+  min-height: 78px;
+  padding: 18px 0;
+  justify-content: flex-end;
+  border-top: 1px solid var(--personal-line);
+}
+.personal-footer p,
+.personal-footer a { font-size: 12px; font-weight: 400; }
+
+.home-profile {
+  width: min(640px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 55px 0 90px;
+  text-align: center;
+}
+.home-profile__portrait { width: 152px; height: 152px; margin: 0 auto 25px; }
+.home-profile__portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 58% 22%;
+}
+.home-profile h1 {
+  margin: 0;
+  color: var(--personal-ink);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+}
+.home-profile__intro {
+  margin-top: 29px;
+  padding: 23px 0 19px;
+  border-top: 1px solid var(--personal-line);
+  border-bottom: 1px solid var(--personal-line);
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.home-profile__intro p { margin: 0 0 15px; }
+.home-profile__intro p:last-child { margin-bottom: 0; }
+.home-profile__intro a,
+.research-page a:not(.research-figure__link) {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--personal-accent) 45%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.home-profile__contact,
+.home-profile__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 13px 27px;
+}
+.home-profile__contact { margin-top: 23px; font-size: 14px; }
+.home-profile__links { margin-top: 32px; font-size: 16px; }
+.home-profile__links a { padding: 5px 0; border-bottom: 1px solid var(--personal-line); }
+.home-profile__links a:hover { border-color: var(--personal-accent); }
+
+.research-page {
+  width: min(920px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 51px 0 65px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.research-intro { max-width: 760px; margin-bottom: 49px; }
+.research-intro h1 {
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+.research-intro p { margin: 0; font-size: 17px; line-height: 1.8; }
+.research-topic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 38px;
+  align-items: start;
+  padding: 37px 0 42px;
+  border-top: 1px solid var(--personal-line);
+}
+.research-topic h2 {
+  margin: 0 0 17px;
+  padding: 0;
+  color: var(--personal-ink);
+  border: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+}
+.research-topic__copy > p { margin: 0 0 15px; }
+.research-topic__copy .research-reading { margin-top: 20px; font-size: 13px; line-height: 1.65; }
+.research-reading a { display: inline; }
+.research-reading span { display: block; margin-top: 7px; }
+.research-figure { min-width: 0; margin: 4px 0 0; }
+.research-figure__link {
+  display: block;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid var(--personal-line);
+}
+.research-figure img { display: block; width: 100%; height: auto; }
+.research-figure figcaption { margin-top: 11px; color: var(--personal-muted); font-size: 12px; line-height: 1.65; }
+.research-figure figcaption a { white-space: nowrap; }
+.research-demo {
+  margin-top: 6px;
+  padding: 23px 0;
+  border-top: 1px solid var(--personal-line);
+  border-bottom: 1px solid var(--personal-line);
+}
+.research-demo summary { color: var(--personal-accent); font-size: 15px; cursor: pointer; }
+.research-demo summary:focus-visible { outline: 2px solid var(--personal-focus); outline-offset: 5px; }
+.research-demo__content { max-width: 640px; margin: 22px auto 0; }
+.research-demo__content > p { color: var(--personal-muted); font-size: 14px; }
+.research-demo .elastic-field { height: 340px; }
+.research-demo .elastic-field__caption { text-align: left; font-size: 12px; }
+
+.page-about .about-hero {
+  width: min(920px, calc(100% - 48px));
+  padding: 51px 0 65px;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 45px;
+}
+.page-about .about-portrait { width: 200px; height: 200px; }
+.page-about .about-hero__copy > p:not(.eyebrow):not(.about-hero__role) { text-align: left; }
+.page-about .about-hero__role { font-size: 17px; font-weight: 500; }
+.page-about .about-contact__email { font-size: 16px; }
+.page-about .eyebrow {
+  color: var(--personal-muted);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* Keep the publication list's existing width, spacing, and type hierarchy. */
+.page-publications .personal-header__inner,
+.page-publications .personal-footer__inner { width: min(1180px, calc(100% - 3rem)); }
+.page-publications .pub-hero { border-bottom: 0; padding-bottom: 0; }
+.page-publications .pub-list { border-top: 0; }
+.page-publications .pub-section .pub-card {
+  padding: 1rem 0 1.3rem;
+  border-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .personal-header__inner,
+  .personal-footer__inner,
+  .page-publications .personal-header__inner,
+  .page-publications .personal-footer__inner { width: calc(100% - 36px); min-height: 68px; }
+  .personal-header__controls { gap: 8px; }
+  .personal-header__inner { position: relative; }
+  .personal-nav {
+    top: calc(100% - 1px);
+    right: 0;
+    width: min(250px, calc(100vw - 36px));
+    padding: 6px 18px;
+    gap: 0;
+  }
+  .personal-nav a { padding: 13px 0; font-size: 15px; }
+  .home-profile { width: min(620px, calc(100% - 40px)); padding: 30px 0 64px; }
+  .home-profile__portrait { width: 132px; height: 132px; margin-bottom: 23px; }
+  .home-profile h1 { font-size: 29px; }
+  .home-profile__intro { font-size: 16px; line-height: 1.8; }
+  .home-profile__links { margin-top: 28px; gap: 15px 25px; }
+  .research-page { width: min(620px, calc(100% - 40px)); padding: 32px 0 48px; }
+  .research-intro { margin-bottom: 33px; }
+  .research-intro h1 { font-size: 28px; margin-bottom: 18px; }
+  .research-intro p { font-size: 16px; }
+  .research-topic { grid-template-columns: 1fr; gap: 24px; padding: 29px 0 34px; }
+  .research-topic h2 { font-size: 21px; }
+  .research-figure { width: 100%; max-width: 440px; margin: 0 auto; }
+  .research-demo .elastic-field { height: 280px; }
+  .page-about .about-hero {
+    width: min(620px, calc(100% - 40px));
+    padding: 32px 0 48px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .page-about .about-side { grid-template-columns: 150px minmax(0, 1fr); gap: 24px; align-items: center; }
+  .page-about .about-portrait { width: 150px; height: 150px; }
+  .page-about .about-contact__email { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 380px) {
+  .personal-brand__name { font-size: 15px; }
+  .home-profile__links { gap: 15px 20px; font-size: 15px; }
+  .page-about .about-side { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .personal-header,
+  .personal-footer,
+  .research-demo { display: none; }
+  .research-topic { break-inside: avoid; }
+}

@@ -513,6 +513,17 @@
   }
 
   document.querySelectorAll('[data-elastic-field]').forEach((field) => {
-    new ElasticFieldController(field).connect();
+    const disclosure = field.closest('details');
+    const connect = () => new ElasticFieldController(field).connect();
+    if (disclosure && !disclosure.open) {
+      const connectWhenOpened = () => {
+        if (!disclosure.open) return;
+        connect();
+        disclosure.removeEventListener('toggle', connectWhenOpened);
+      };
+      disclosure.addEventListener('toggle', connectWhenOpened);
+    } else {
+      connect();
+    }
   });
 })();
